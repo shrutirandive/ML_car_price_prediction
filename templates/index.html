@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <!--Font-->
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(252, 235, 87);
+            /* padding: 10px; */
+            font-family: 'Alata'; 
+        }
+        
+        #owner {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            font-size: 18px;font-family: 'Alata'; 
+        }
+        
+        #owner:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            font-size: 18px;font-family: 'Alata'; 
+        }
+        
+        #fuel:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #trasmission {
+            font-size: 18px;
+            width: 150px;
+            height: 43px;
+            font-size: 18px;font-family: 'Alata'; 
+        }
+        
+        #trasmission:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #dealer {
+            width: 108px;
+            height: 43px;
+            text-align: center;
+            font-size: 18px;font-family: 'Alata'; 
+        }
+        
+        #dealer:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        /* submit button */
+        #sub {
+            width: 220px;
+            height: 57px;
+            text-align: center;
+            font-size: 18px;font-family: 'Alata'; 
+            border-radius: 4px;
+            background-color: rgb(58, 240, 118);
+        }
+        
+        #sub:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #first {
+            height: 25px;
+            font-size: 18px;font-family: 'Alata'; 
+            text-align: center;
+        }
+        
+        #second {
+            height: 25px;
+            font-size: 18px;font-family: 'Alata'; 
+            text-align: center;
+        }
+        
+        #third {
+            height: 25px;
+            font-size: 18px;font-family: 'Alata'; 
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body >
+    <div style="color:rgb(0, 0, 0)">
+        <form action="{{ url_for('predict')}}" method="post">
+        <h2><ul>Car Price Prediction</ul></h2>
+            <h2 style="color: rgb(51, 69, 230);">{{ prediction_text }}</h2>
+            <h3>Year</h3>
+                <input id="first" name="Year" type="number ">
+            <h3>Showroom Price(In Lakhs)</h3><br>
+                <input id="second" name="Present_Price" required="required">
+            <h3>Kilometers Drived</h3>
+                <input id="third" name="Kms_Driven" required="required">
+            <h3>No. of owners previously had this Car</h3><br>
+                <select name="Owner" id="owner" required="required">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                </select>
+            <h3>Fuel type</h3><br>
+                <select name="Fuel_Type_Petrol" id="fuel" required="required">
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Diesel">CNG</option>
+                </select>
+            <h3>Dealer or Individual</h3><br>
+                <select name="Seller_Type_Individual" id="dealer" required="required">
+                    <option value="Dealer">Dealer</option>
+                    <option value="Individual">Individual</option>
+                </select>
+            <h3>Transmission type</h3><br>
+                <select name="Transmission_Mannual" id="trasmission" required="required">
+                    <option value="Mannual">Manual Car</option>
+                    <option value="Automatic">Automatic Car</option>
+                </select>
+            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
