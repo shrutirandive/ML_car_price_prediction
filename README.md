@@ -4,9 +4,8 @@ Car price is considered as the dependent variable while other attributes as the 
 
 This Flask project is deployed on Heroku
 
-![image](https://user-images.githubusercontent.com/54211989/141934515-8ad6cb39-f5c4-43b6-92fc-c4b13a2f4fed.png)
+![image](https://user-images.githubusercontent.com/54211989/142379037-c6a8cc64-bd4c-4e92-9730-b75673f9aa1c.png)
 
-![image](https://user-images.githubusercontent.com/54211989/141934597-01c5951c-a462-49c4-9e56-c35c33d7419e.png)
-
+![image](https://user-images.githubusercontent.com/54211989/142379131-107bf883-cb50-4834-bc78-9970dc86d3d4.png)
 
 
