@@ -2,7 +2,7 @@
 
 Car price is considered as the dependent variable while other attributes as the independent variables.
 
-This project is deployed using Flask
+This Flask project is deployed on Heroku
 
 ![image](https://user-images.githubusercontent.com/54211989/141934515-8ad6cb39-f5c4-43b6-92fc-c4b13a2f4fed.png)
 
