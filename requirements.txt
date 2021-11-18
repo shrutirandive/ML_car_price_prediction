@@ -124,8 +124,6 @@ soupsieve==2.0
 sqlparse==0.4.1
 testpath==0.5.0
 threadpoolctl==2.1.0
-toml==0.10.2
-tornado==6.1
 traitlets==5.1.0
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
@@ -136,4 +134,3 @@ webencodings==0.5.1
 Werkzeug==2.0.1
 widgetsnbextension==3.5.1
 wrapt==1.12.1
-zipp==3.4.0
